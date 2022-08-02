@@ -39,6 +39,7 @@ header {
 
 .logo {
         font-family: 'Square Peg', cursive;
+        padding: 20px;
         font-size: 5rem;
         color: white;
         text-shadow: 0 1px 0 rgb(190,190,190),
@@ -55,13 +56,6 @@ header {
                 0 0 50px rgba(0,0,0,0.20),
                 0 0 75px rgba(0,0,0,0.15),
                 0 0 100px rgba(0,0,0,0.10);
-}
-
-
-.logo-container {
-        display: flex;
-        flex-direction: row;
-        padding-left: 30px;
 }
 
 .navbar {
@@ -159,10 +153,15 @@ header {
         background-color: var(--background);
       }
 
+.footer-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px;
+}
+
 .footer .col {
         width: 190px;
         height: auto;
-        float: left;
         box-sizing: border-box;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
@@ -197,8 +196,9 @@ header {
         -moz-transition: .2s;
       }
 .social ul li {
-        display: inline-block;
-        padding-right: 5px !important;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
       }
       
 .footer .col ul li:hover {
@@ -221,9 +221,6 @@ header {
         Start of MQ
 ========================================================
 */
-@media screen and (min-width: 550px) {
-        
-}
 
 @media screen and (min-width: 750px) { 
         .toggle-label { 
@@ -257,10 +254,22 @@ header {
         .navbar ul li {
                 margin: 2rem;
         }
+
+        .footer-container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+        }
 }
 
 @media screen and (min-width: 1025px){
-    
+
+        .footer-container {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                justify-content: space-evenly;
+                padding: 15px;
+                margin-left: 30px;
+        }
 }
 
       
