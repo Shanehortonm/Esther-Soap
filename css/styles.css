@@ -1,4 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+
+
 
 :root {
         --background: rgb(100,225,300);
@@ -34,6 +37,32 @@ header {
         z-index: 99;
 }
 
+.logo {
+        font-family: 'Square Peg', cursive;
+        font-size: 5rem;
+        color: white;
+        text-shadow: 0 1px 0 rgb(190,190,190),
+                0 2px 0 rgb(185,185,185),
+                0 3px 0 rgb(180,180,180),
+                0 4px 0 rgb(175,175,175),
+                0 5px 0 rgb(170,170,170),
+                0 6px 0 rgb(165,165,165),
+                0 7px 0 rgb(160,160,160),
+                0 8px 0 rgb(155,155,155),
+                0 9px 0 rgb(150,150,150),
+                0 0 10px rgba(0,0,0,0.30),
+                0 0 25px rgba(0,0,0,0.25),
+                0 0 50px rgba(0,0,0,0.20),
+                0 0 75px rgba(0,0,0,0.15),
+                0 0 100px rgba(0,0,0,0.10);
+}
+
+
+.logo-container {
+        display: flex;
+        flex-direction: row;
+        padding-left: 30px;
+}
 
 .navbar {
         width: 100%;
@@ -196,7 +225,7 @@ header {
         
 }
 
-@media screen and (min-width: 800px) { 
+@media screen and (min-width: 750px) { 
         .toggle-label { 
                 display: none; 
         }
@@ -209,6 +238,7 @@ header {
         .navbar-container {
                 display: flex;
                 flex-direction: column;
+                padding-top: 10px;
         }
 
         .navbar {
