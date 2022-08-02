@@ -1,14 +1,20 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
 :root {
---background: rgb(100,225,295);
+        --background: rgb(100,225,300);
 }
 
 body, *::before, *::after {
-font-family: 'Roboto';
-margin: 0; 
-box-sizing: border-box;
-background-color: white;
+        font-family: 'Roboto';
+        margin: 0; 
+        box-sizing: border-box;
+        background-color: white;
+}
+
+.dummy-space {
+        width: 100%;
+        height: 100vh;
+        background-color: beige;
 }
 
 /*
@@ -18,105 +24,102 @@ background-color: white;
 */
 
 /*Nav Bar styling*/
-header 
-{
-width: 100%;
-background: var(--background);
-text-align: center; 
-position: fixed;
-opacity: .8;
-z-index: 99;
+.logo {
+        display: flex;
 }
 
-.navbar 
-{
-width: 100%;
-position: absolute;
-text-align: center;
-background-color: var(--background);
-transition: transform 400ms ease-in-out;
-transform: scale(1,0);
-transform-origin: top;
+.logo-img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
 }
 
-.navbar ul 
-{
-list-style: none;
-margin: 0;
-padding: 0;
+header {
+        width: 100%;
+        background: var(--background);
+        text-align: center; 
+        position: fixed;
+        opacity: .8;
+        z-index: 99;
+}
+
+.navbar {
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        background-color: var(--background);
+        transition: transform 400ms ease-in-out;
+        transform: scale(1,0);
+        transform-origin: top;
+}
+
+.navbar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
 } 
 
-.navbar li 
-{
- margin-bottom: 1rem;
+.navbar li {
+        margin-bottom: 1rem;
 }
 
-.navbar a 
-{
-  color: black;
-  text-decoration: none; 
-  font-size: 1rem;
-  text-transform: uppercase;
-  opacity: 0;
+.navbar a {
+        color: black;
+        text-decoration: none; 
+        font-size: 1rem;
+        text-transform: uppercase;
+        opacity: 0;
 }
 
-.navbar a:hover
-{
-color: white;
+.navbar a:hover {
+        color: white;
 }
 
-.nav-toggle:checked ~ nav
-{
-transform:scale(1);
+.nav-toggle:checked ~ nav {
+        transform:scale(1);
 }
 
-.nav-toggle
-{
-display:none;
+.nav-toggle {
+        display:none;
 }
 
-.toggle-label 
-{
-position: absolute;
-top:0; 
-right:0;
-margin-right:1rem;
-height: 100%;
-display: flex;
-align-items: center;
+.toggle-label {
+        position: absolute;
+        top:0; 
+        right:0;
+        margin-right:1rem;
+        height: 100%;
+        display: flex;
+        align-items: center;
 } 
 
 .toggle-label span,
 .toggle-label span::before, 
-.toggle-label span::after
-{
-display: block;
-background: white;
-height: 2px;
-width: 2rem;
-position: relative;
+.toggle-label span::after {
+        display: block;
+        background: white;
+        height: 2px;
+        width: 2rem;
+        position: relative;
 } 
 
-.toggle-label span::before 
-{
- bottom: .4rem;
-  content: '';
- position: absolute;
+.toggle-label span::before {
+        bottom: .4rem; 
+        content: '';
+        position: absolute;
 }
 
-.toggle-label span::after
-{
-  top: .4rem;
-  content: '';
- position: absolute;
+.toggle-label span::after {
+        top: .4rem;
+        content: '';
+        position: absolute;
 }
 
-.nav-toggle:checked ~ nav a 
-{
-opacity: 1;
-transition: opacity 250ms ease-in-out 250ms;
-
+.nav-toggle:checked ~ nav a {
+        opacity: 1;
+        transition: opacity 250ms ease-in-out 250ms;
 }
+
 /*
 ========================================================
         End of Nav
@@ -127,7 +130,67 @@ transition: opacity 250ms ease-in-out 250ms;
 ========================================================
         Start of Footer
 ========================================================
-*//*
+*/
+
+.footer {
+        width: 100%;
+        height: 100%;
+        background-color: var(--background);
+      }
+
+.footer .col {
+        width: 190px;
+        height: auto;
+        float: left;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        padding: 0px 20px 20px 20px;
+      }
+.footer .col h1 {
+        margin: 0;
+        padding: 0;
+        font-family: inherit;
+        font-size: 12px;
+        line-height: 17px;
+        padding: 20px 0px 5px 0px;
+        color: black;
+        font-weight: normal;
+        text-transform: uppercase;
+        letter-spacing: 0.250em;
+      }
+.footer .col ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+.footer .col ul li {
+        color: black;
+        font-size: 14px;
+        font-family: inherit;
+        font-weight: bold;
+        padding: 5px 0px 5px 0px;
+        cursor: pointer;
+        transition: .2s;
+        -webkit-transition: .2s;
+        -moz-transition: .2s;
+      }
+.social ul li {
+        display: inline-block;
+        padding-right: 5px !important;
+      }
+      
+.footer .col ul li:hover {
+        color: #ffffff;
+        transition: .1s;
+        -webkit-transition: .1s;
+        -moz-transition: .1s;
+      }
+.clearfix {
+        clear: both;
+      }
+
+/*
 ========================================================
         End of Footer
 ========================================================
@@ -137,7 +200,9 @@ transition: opacity 250ms ease-in-out 250ms;
         Start of MQ
 ========================================================
 */
-
+@media screen and (min-width: 550px) {
+        
+}
 
 @media screen and (min-width: 800px) 
 {
@@ -178,7 +243,7 @@ transition: opacity 250ms ease-in-out 250ms;
     
 }
 
-
+      
 /*
 ========================================================
         End of MQ
