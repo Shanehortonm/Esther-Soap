@@ -24,15 +24,6 @@ body, *::before, *::after {
 */
 
 /*Nav Bar styling*/
-.logo {
-        display: flex;
-}
-
-.logo-img {
-        border-radius: 50%;
-        width: 100px;
-        height: 100px;
-}
 
 header {
         width: 100%;
@@ -42,6 +33,7 @@ header {
         opacity: .8;
         z-index: 99;
 }
+
 
 .navbar {
         width: 100%;
@@ -204,39 +196,37 @@ header {
         
 }
 
-@media screen and (min-width: 800px) 
-{
-.toggle-label
-  {
-    display: none; 
-  }
+@media screen and (min-width: 800px) { 
+        .toggle-label { 
+                display: none; 
+        }
   
-  header 
-  {
-  display: flex; 
-  justify-content: space-around;
+        header {
+                display: flex; 
+                justify-content: space-around;
+        }
+
+        .navbar-container {
+                display: flex;
+                flex-direction: column;
+        }
+
+        .navbar {
+                all: unset;
+                color: white;
+                display: flex; 
+        }
   
-  }
+        .navbar a {
+                opacity: 1;
+        }
+        .navbar ul {
+                display: flex; 
+        }
   
- .navbar 
-  {
-   all: unset;
-   color: white;
-   display: flex; 
-   
-  }
-  .navbar a 
-  {
-   opacity: 1;
-  }
-  .navbar ul 
-  {
-   display: flex; 
-  }
-  .navbar ul li 
-  {
-   margin: 2rem;
-  }
+        .navbar ul li {
+                margin: 2rem;
+        }
 }
 
 @media screen and (min-width: 1025px){
