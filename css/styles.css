@@ -4,7 +4,7 @@
 
 
 :root {
-        --background: rgb(100,225,300);
+        --background: rgb(51,102,150);
 }
 
 body, *::before, *::after {
@@ -16,7 +16,7 @@ body, *::before, *::after {
 
 .dummy-space {
         width: 100%;
-        height: 100vh;
+        height: 80vh;
         background-color: beige;
 }
 
@@ -32,16 +32,15 @@ header {
         width: 100%;
         background: var(--background);
         text-align: center; 
-        position: fixed;
-        opacity: .8;
+        position: absolute;
+        opacity: .9;
         z-index: 99;
 }
 
 .logo {
         font-family: 'Square Peg', cursive;
-        padding: 20px;
-        font-size: 5rem;
-        color: white;
+        font-size: 6rem;
+        color: black;
         text-shadow: 0 1px 0 rgb(190,190,190),
                 0 2px 0 rgb(185,185,185),
                 0 3px 0 rgb(180,180,180),
@@ -79,7 +78,7 @@ header {
 }
 
 .navbar a {
-        color: black;
+        color: white;
         text-decoration: none; 
         font-size: 1rem;
         text-transform: uppercase;
@@ -88,6 +87,13 @@ header {
 
 .navbar a:hover {
         color: white;
+        transition: 0.3s ease-in-out;
+        background-color: black;
+        padding: 10px;
+        border-radius: 100%;
+        font-family: cursive;
+        border: 0.5px solidw white;
+
 }
 
 .nav-toggle:checked ~ nav {
@@ -138,6 +144,29 @@ header {
 /*
 ========================================================
         End of Nav
+========================================================
+*/
+/*
+========================================================
+        Start of Main
+========================================================
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+========================================================
+        End of Main
 ========================================================
 */
 
