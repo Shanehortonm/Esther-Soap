@@ -22,12 +22,14 @@
     height: 350px;
     border-radius: 20px;
     margin-top: 20px;
+    margin-bottom: 50px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, 
     rgba(10, 37, 64, 0.5) 0px -2px 6px 0px inset;
 }
 
 .intro-1 {
+    border-top: 2.5px solid rgb(217, 217, 217);
     font-family: 'Roboto','Times New Roman', Times, serif;
     text-align: center;
     font-size: 20px;
@@ -181,7 +183,7 @@ figure.t-cards .profile {
     }
     
     .intro-1 {
-        border-top: 2.5px solid rgb(217, 217, 217);
+        
         font-size: 2rem;
     }
 }

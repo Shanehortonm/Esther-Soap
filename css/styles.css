@@ -48,9 +48,12 @@ header {
 }
 
 .logo {
+        
+        width: 100%;
+        text-align: center;
         font-family: 'Square Peg', cursive;
         font-size: 5rem;
-        color: black;
+        color: white;
         text-shadow: 0 1px 0 rgb(190,190,190),
                 0 2px 0 rgb(185,185,185),
                 0 3px 0 rgb(180,180,180),
@@ -157,29 +160,6 @@ header {
         End of Nav
 ========================================================
 */
-/*
-========================================================
-        Start of Main
-========================================================
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-========================================================
-        End of Main
-========================================================
-*/
 
 /*
 ========================================================
@@ -199,6 +179,13 @@ header {
         padding: 10px;
 }
 
+.footer-company-info {
+        font-size: 20px;
+        text-align: center;
+        padding: 2px;
+        color: white;
+}
+
 .footer .col {
         width: 190px;
         height: auto;
@@ -214,18 +201,20 @@ header {
         font-size: 12px;
         line-height: 17px;
         padding: 20px 0px 5px 0px;
-        color: black;
+        color: white;
         font-weight: normal;
         text-transform: uppercase;
+        border-bottom: 1px solid white;
         letter-spacing: 0.250em;
       }
 .footer .col ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
+        padding-top: 5px;
       }
 .footer .col ul li {
-        color: black;
+        color: white;
         font-size: 14px;
         font-family: inherit;
         font-weight: bold;
@@ -242,10 +231,8 @@ header {
       }
       
 .footer .col ul li:hover {
-        color: #ffffff;
-        transition: .1s;
-        -webkit-transition: .1s;
-        -moz-transition: .1s;
+        color: rgba(252, 248, 248, 0.5);
+        transition: .3s ease-in-out;
       }
 .clearfix {
         clear: both;
