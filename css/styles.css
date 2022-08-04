@@ -40,6 +40,11 @@ header {
         position: absolute;
         opacity: .9;
         z-index: 99;
+        box-shadow: rgba(51,102,150, 0.4) 0px 5px, 
+        rgba(51,102,150, 0.3) 0px 10px, 
+        rgba(51,102,150, 0.2) 0px 15px, 
+        rgba(51,102,150, 0.1) 0px 20px, 
+        rgba(51,102,150, 0.05) 0px 25px;
 }
 
 .logo {
@@ -80,6 +85,7 @@ header {
 
 .navbar li {
         margin-bottom: 1rem;
+        margin-top: 1rem;
 }
 
 .navbar a {
