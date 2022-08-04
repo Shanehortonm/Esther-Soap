@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
-
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
 
 /*
 =============================================================
@@ -43,7 +43,106 @@
     End of Intro
 =============================================================
 */
+/*
+=============================================================
+    Start of Testimonial
+=============================================================
+*/
 
+.testimonials {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+}
+
+
+
+figure.t-cards {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 10px;
+    width: 95%;
+    color: #000000;
+    text-align: center;
+    font-size: 16px;
+    background-color: rgb(51,102,150);
+    padding: 30px;
+    box-sizing: border-box;
+  }
+
+figure.t-cards *,
+figure.t-cards *:before,
+figure.t-cards *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+
+figure.t-cards figcaption {
+    width: 100%;
+  }
+
+figure.t-cards h2,
+figure.t-cards h4,
+figure.t-cards blockquote {
+    margin: 0;
+  }
+
+figure.t-cards h2,
+figure.t-cards h4 {
+    font-weight: 300;
+  }
+
+figure.t-cards h2 {
+    color: #ffffff;
+  }
+
+figure.t-cards h4 {
+    color: #a6a6a6;
+  }
+
+figure.t-cards blockquote {
+    font-size: 1em;
+    padding: 45px 20px 40px 50px;
+    margin-top: 30px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: inset -1.4px -1.4px 2px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    position: relative;
+  }
+
+figure.t-cards blockquote:before {
+    font-family: 'FontAwesome';
+    content: "\201C";
+    position: absolute;
+    font-size: 70px;
+    opacity: 0.25;
+    font-style: normal;
+    top: 0px;
+    left: 20px;
+  }
+
+figure.t-cards .profile {
+    width: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.4);
+    margin-bottom: 10px;
+    border: solid 5px #A6A57A;
+  }
+  /*
+=============================================================
+    End of Testimonials
+=============================================================
+*/
+/*
+=============================================================
+    Start of MQ
+=============================================================
+*/
 @media (min-width: 750px) {
     .intro {
         flex-direction: row;
@@ -62,7 +161,9 @@
         font-size: x-large;
     }
 
-    .intro
+    .testimonials {
+        flex-direction: row;
+    }
 }
 
 
@@ -80,8 +181,3 @@
 
     }
 }
-/*
-=============================================================
-    Start of MQ
-=============================================================
-*/
