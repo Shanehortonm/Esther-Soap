@@ -251,7 +251,7 @@ header {
 ========================================================
 */
 
-@media screen and (min-width: 750px) { 
+@media (min-width: 750px) { 
         .toggle-label { 
                 display: none; 
         }
@@ -261,6 +261,9 @@ header {
                 justify-content: space-around;
         }
 
+        .logo {
+                font-size: 7rem;
+        }
         .navbar-container {
                 display: flex;
                 flex-direction: column;
@@ -270,7 +273,9 @@ header {
         .navbar {
                 all: unset;
                 color: white;
-                display: flex; 
+                display: flex;
+                justify-content: center;
+                align-items: center;
         }
   
         .navbar a {
@@ -290,7 +295,11 @@ header {
         }
 }
 
-@media screen and (min-width: 1025px){
+@media (min-width: 1025px){
+
+        .logo {
+                font-size: 8rem;
+        }
 
         .footer-container {
                 display: grid;

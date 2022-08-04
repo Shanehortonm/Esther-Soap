@@ -1,3 +1,7 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+
+
 /*
 =============================================================
     Start of Intro
@@ -5,6 +9,7 @@
 */
 
 .intro {
+    width: 100%;
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
@@ -17,13 +22,20 @@
     height: 350px;
     border-radius: 20px;
     margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.75) 0px 25px 20px -20px;
 }
 
 .intro-1 {
+    font-family: 'Roboto','Times New Roman', Times, serif;
     text-align: center;
-    font-size: medium;
-    margin: 10px;
+    font-size: 20px;
+    margin: 20px;
     padding: 10px;
+}
+
+.purpose {
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 /*
@@ -36,13 +48,37 @@
     .intro {
         flex-direction: row;
         padding: 20px;
-        margin: 10px 0 10px 0;
+        justify-content: space-around;
     }
+
+    .intro img {
+        width: 400px;
+        height: 450px;
+    }
+
+    .intro-1 {
+        font-size: 20px;
+        width: 60%;
+        font-size: x-large;
+    }
+
+    .intro
 }
 
 
 @media (min-width: 1025px) {
+    .intro {
 
+    }
+
+    .intro img {
+        width: 650px;
+        height: 650px;
+    }
+    
+    .intro-1 {
+
+    }
 }
 /*
 =============================================================
