@@ -50,10 +50,11 @@ header {
 .logo {
         
         width: 100%;
+        
         text-align: center;
         font-family: 'Caveat';
-        font-size: 5rem;
-        color: white;
+        font-size: 4.5rem;
+        color: rgb(0,0,0,0.4);
         text-shadow: 0 1px 0 rgb(190,190,190),
                 0 2px 0 rgb(185,185,185),
                 0 3px 0 rgb(180,180,180),
@@ -62,7 +63,7 @@ header {
                 0 6px 0 rgb(165,165,165),
                 0 7px 0 rgb(160,160,160),
                 0 8px 0 rgb(155,155,155),
-                0 9px 0 rgb(150,150,150),
+                0 9px 0 rgb(0,0,0),
                 0 0 10px rgba(0,0,0,0.30),
                 0 0 25px rgba(0,0,0,0.25),
                 0 0 50px rgba(0,0,0,0.20),
