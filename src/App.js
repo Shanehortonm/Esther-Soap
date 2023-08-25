@@ -1,11 +1,12 @@
 import React from "react";
-import {Hero, Nav} from './components'
+import {Hero, Nav, Offers} from './components'
 
 function App() {
   return (
     <div>
       <Nav />
       <Hero />
+      <Offers />
     </div>
   );
 }

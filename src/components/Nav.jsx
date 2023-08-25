@@ -24,7 +24,7 @@ export const Nav = () => {
             ? 'ease-in duration-500 fixed text-gray-300 left-0 top-0 w-full h-full bg-black/90 px-4 py-7 flex-col z-10'
             : 'absolute top-0 h-screen left-[-100%] ease-in duration-300 z-10'}
             >
-            <ul className='flex flex-col fixed w-full h-full items-center justify-center'>
+            <ul className='flex flex-col fixed w-full h-full items-center justify-center w-full'>
               <li className='font-bold text-3xl p-8 cursor-pointer'>Home</li>
               <li className='font-bold text-3xl p-8 cursor-pointer'>Products</li>
               <li className='font-bold text-3xl p-8 cursor-pointer'>Contact</li>
