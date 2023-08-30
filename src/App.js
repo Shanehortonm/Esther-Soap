@@ -1,5 +1,13 @@
 import React from "react";
-import { Hero, Nav, Offers, Gallery, BrandMessage, Footer } from "./components";
+import {
+  Hero,
+  Nav,
+  Offers,
+  Gallery,
+  BrandMessage,
+  ImageSlider,
+  Footer,
+} from "./components";
 
 function App() {
   return (
@@ -9,6 +17,7 @@ function App() {
       <Offers />
       <Gallery />
       <BrandMessage />
+      <ImageSlider />
       <Footer />
     </div>
   );
