@@ -3,7 +3,6 @@ import { Soap2, Soap3, Soap4, Soap5, Soap6 } from "../images/index";
 
 export const ImageSlider = () => {
   const slides = [Soap2, Soap3, Soap4, Soap5, Soap6];
-
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const updateSlide = () => {

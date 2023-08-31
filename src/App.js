@@ -6,6 +6,7 @@ import {
   Gallery,
   BrandMessage,
   ImageSlider,
+  FooterForm,
   Footer,
 } from "./components";
 
@@ -18,6 +19,7 @@ function App() {
       <Gallery />
       <BrandMessage />
       <ImageSlider />
+      <FooterForm />
       <Footer />
     </div>
   );
