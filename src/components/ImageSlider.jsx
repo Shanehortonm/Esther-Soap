@@ -15,7 +15,7 @@ export const ImageSlider = () => {
     return () => {
       clearInterval(timer);
     };
-  }, []);
+  });
 
   return (
     <div className="max-w-[1200px] h-[480px] w-full m-auto py-16 px-4 ">

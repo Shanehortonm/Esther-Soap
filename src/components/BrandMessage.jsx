@@ -1,5 +1,5 @@
 import React from "react";
-import { Soap2, Soap3, Soap4, Soap5, Soap6 } from "../images/index";
+import { Soap2, Soap3, Soap4 } from "../images/index";
 
 export const BrandMessage = () => {
   return (
