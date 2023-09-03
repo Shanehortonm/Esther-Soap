@@ -19,7 +19,6 @@ function App() {
       <Gallery />
       <BrandMessage />
       <ImageSlider />
-      <FooterForm />
       <Footer />
     </div>
   );
