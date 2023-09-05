@@ -6,8 +6,7 @@ import {
   Gallery,
   BrandMessage,
   ImageSlider,
-  FooterForm,
-  Footer,
+  FooterNav,
 } from "./components";
 
 function App() {
@@ -19,7 +18,7 @@ function App() {
       <Gallery />
       <BrandMessage />
       <ImageSlider />
-      <Footer />
+      <FooterNav />
     </div>
   );
 }
