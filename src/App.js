@@ -1,26 +1,34 @@
-import React from "react";
 import {
-  Hero,
-  Nav,
-  Offers,
-  Gallery,
-  BrandMessage,
-  ImageSlider,
-  FooterNav,
-} from "./components";
+  createBrowserRouter,
+  Route,
+  createRoutesFromElements,
+  RouterProvider,
+} from "react-router-dom";
 
-function App() {
-  return (
-    <div>
-      <Nav />
-      <Hero />
-      <Offers />
-      <Gallery />
-      <BrandMessage />
-      <ImageSlider />
-      <FooterNav />
-    </div>
-  );
-}
+//PAGES
+import { Home } from "./pages/Home";
+import { Products } from "./pages/Products";
+import { Contact } from "./pages/Contact";
+import { About } from "./pages/About";
+import { NotFound } from "./pages/NotFound";
+
+//Layout
+import { RootLayout } from "./layouts/RootLayout";
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<RootLayout />}>
+      <Route index element={<Home />} />
+      <Route path="products" element={<Products />} />
+      <Route path="about" element={<About />} />
+      <Route path="contact" element={<Contact />} />
+      <Route path="*" element={<NotFound />} />
+    </Route>
+  )
+);
+
+const App = () => {
+  return <RouterProvider router={router} />;
+};
 
 export default App;

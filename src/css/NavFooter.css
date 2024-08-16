@@ -1,0 +1,83 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  font-size: 1.4rem;
+}
+
+.main-nav {
+  display: flex;
+  height: 50px;
+}
+
+.hamburger-container {
+  display: block;
+  z-index: 99;
+  position: absolute;
+  top: 0;
+  left: 90%;
+}
+
+.nav-links {
+  display: none;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100svh;
+  font-size: 1.4rem;
+  background-color: coral;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.nav-links.open {
+  display: flex;
+  color: white;
+}
+
+.main-nav ul li {
+  padding-bottom: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.main-nav ul li:hover {
+  color: aqua;
+  transition: all 0.3s ease-in-out;
+}
+
+/*
+=====================================================================
+Media Queries    Built from Mobile ==> Tablet/IPad ==> Desktop
+=====================================================================
+*/
+
+@media (min-width: 550px) and (max-width: 1100px) {
+  .hamburger-container {
+    display: none;
+  }
+
+  .nav-links {
+    display: contents;
+  }
+  .main-nav ul {
+    color: red;
+  }
+}
+
+@media (min-width: 1101px) {
+  .hamburger-container {
+    display: none;
+  }
+
+  .nav-links {
+    display: contents;
+  }
+}
